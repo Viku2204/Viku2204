@@ -1,11 +1,11 @@
 import pymongo
 
 class MongoDBHelper:
-    def __init__(self, collection = 'owner'):
-        uri = "mongodb+srv://vikuu2204:vikas123@cluster0.wumoqgr.mongodb.net/?retryWrites=true&w=majority"
+    def __init__(self, collection = 'userlogin'):
+        uri = "mongodb+srv://vikuu2204:vikas_kumar@cluster0.wumoqgr.mongodb.net/?retryWrites=true&w=majority"
 
         client = pymongo.MongoClient(uri)
-        self.db = client['vikas_kumar']
+        self.db = client['BUS']
         self.collection = self.db[collection]
         print("MongoDB Connected")
 
